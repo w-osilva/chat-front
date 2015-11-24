@@ -1,0 +1,1 @@
+angular.module('Chat', ['ngResource', 'ngRoute', 'ngSanitize'])

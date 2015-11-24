@@ -7,8 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="bower_components/websocket-rails/websocket_rails.js"></script>
+    <script src="bower_components/websocket-rails/event.js"></script>
+    <script src="bower_components/websocket-rails/abstract_connection.js"></script>
+    <script src="bower_components/websocket-rails/http_connection.js"></script>
+    <script src="bower_components/websocket-rails/websocket_connection.js"></script>
+    <script src="bower_components/websocket-rails/channel.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+    <script src="src/config/config.js"></script>
+    <script src="src/config/routes.js"></script>
+
+    <script src="src/controllers/indexCtrl.js"></script>
+
 </head>
-<body>
-    <h1>CHAT</h1>
+<body ng-app="Chat">
+    <div ng-view></div>
 </body>
 </html>
