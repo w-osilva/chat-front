@@ -7,9 +7,9 @@ angular.module('Chat')
                     templateUrl: 'src/views/index.html',
                     controller: 'indexCtrl'
                 })
-                .when('/chat', {
-                    templateUrl: 'src/views/chat.html',
-                    controller: 'chatCtrl'
+                .when('/room/:theme', {
+                    templateUrl: 'src/views/room.html',
+                    controller: 'roomCtrl'
                 })
                 .otherwise({
                     redirectTo: '/'

@@ -1,0 +1,11 @@
+<h1>Room {{ room }}</h1>
+
+<div style="width: 90%; height: 300px; overflow-y: scroll; border: 1px solid #000000; padding: 20px; margin-bottom: 20px">
+    <ul style="list-style:none;">
+        <li ng-repeat="message in messages track by $index">{{ message }}</li>
+    </ul>
+</div>
+
+<input type="text" style="width: 93%" placeholder="write your message" ng-model="new_message"/>
+<br/>
+<button type="button" ng-click="send()">Send</button>

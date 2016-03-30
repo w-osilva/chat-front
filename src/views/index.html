@@ -1,3 +1,18 @@
-<h1>Index</h1>
+<h1>{{ title }}</h1>
 
-<span>{{ message }}</span>
+
+<div ng-hide="user">
+    <h4>Set your username</h4>
+    <input type="text" ng-model="username" placeholder="username"/>
+    <button type="button" ng-click="setUsername()">Set username</button>
+</div>
+
+<div ng-show="user">
+    <h4>Ok {{ user }} now select the room you want to enter</h4>
+    <select ng-model="room">
+        <option value="" >Choose room theme</option>
+        <option ng-repeat="rt in roomsThemes" value="{{ rt }}" ng-selected="room == rt">{{ rt }}</option>
+    </select>
+
+    <button type="button" ng-click="enterRoom()">Enter the room</button>
+</div>

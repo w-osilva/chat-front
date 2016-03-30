@@ -1,1 +1,1 @@
-angular.module('Chat', ['ngResource', 'ngRoute', 'ngSanitize'])
+angular.module('Chat', ['ngResource', 'ngRoute', 'ngSanitize']);
